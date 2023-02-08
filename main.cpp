@@ -392,10 +392,10 @@ void lm35ReadingsArrayInit()
 
 void debounceButtonInit()
 {
-    if( enterButton ) {
-        enterButtonState = BUTTON_DOWN;
-    } else {
+    if( enterButton == 1) {
         enterButtonState = BUTTON_UP;
+    } else {
+        enterButtonState = BUTTON_DOWN;
     }
 }
 
